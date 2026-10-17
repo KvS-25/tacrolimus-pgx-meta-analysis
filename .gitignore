@@ -1,0 +1,15 @@
+# Generated outputs
+results/*
+!results/.gitkeep
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+.Rapp.history
+
+# Your own config and data (the template and example data are tracked)
+config/config.yaml
+data/
+*.pdf
+.DS_Store

@@ -1,0 +1,6 @@
+# Copy to config/config.yaml and edit. Paths are relative to the repo root.
+workbook: test_data/example_workbook.xlsx   # your data workbook (.xlsx)
+sheet: Meta_Data_Extraction                 # sheet that holds one row per genotype group x timepoint
+output_dir: results                         # created if missing; main/ and sensitivity/ go inside
+seed: 20260913
+manual_exclude: []                          # Study IDs to drop, e.g. ["Smith_2021_CYP3A5_Kidney"]
