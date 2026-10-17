@@ -165,7 +165,9 @@ results/
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff) (GitHub's "Cite this repository" button uses it).
+See [CITATION.cff](CITATION.cff).
+
+<sub>P.S. GitHub's "Cite this repository" button uses this file.</sub>
 
 ---
 
