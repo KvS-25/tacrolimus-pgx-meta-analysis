@@ -363,9 +363,15 @@ abcb1_1236 <- build_grp(pooling_data, "rs1128503",
   c("Ref","ABCB1 1236 CT","ABCB1 1236 TT"))
 ma_abcb1_1236 <- fit_model(abcb1_1236, "ABCB1 rs1128503 (1236C>T)")
 
-# ---- 13. COMBINED MULTI-GENE (PROVISIONAL - to be rebuilt together) -----------
+# ---- 13. COMBINED MULTI-GENE (OFF BY DEFAULT) ------------------------------------
+# Joint-genotype cells (e.g. CYP3A5 x ABCB1) are almost never reported with mean and SD,
+# and a pooled combined model across rows is not valid, so multi-gene evidence is handled
+# narratively. This block only runs when run_combined_model: true is set in the config,
+# and its output is a diagnostic, not a pooled estimate to cite.
+run_combined <- isTRUE(cfg$run_combined_model)
+if (run_combined) {
 cat("\n=============================================\n")
-cat("  COMBINED MODEL - PROVISIONAL, DO NOT CITE YET\n")
+cat("  COMBINED MODEL - DIAGNOSTIC ONLY, DO NOT CITE\n")
 cat("=============================================\n")
 combined_map <- c("CYP3A5 *3/*3" = "Ref", "CYP3A5 *1/*1" = "CYP3A5 *1/*1",
                   "CYP3A5 *1/*3" = "CYP3A5 *1/*3", "CYP3A5 expresser" = "CYP3A5 expresser",
@@ -376,7 +382,8 @@ combined_final <- pooling_data %>%
                       levels = c("Ref","CYP3A5 *1/*1","CYP3A5 *1/*3","CYP3A5 expresser",
                                  "CYP3A5 non-expresser","CYP3A4*1G WT"))) %>%
   filter(!is.na(grp))
-ma_combined_final <- fit_model(combined_final, "Combined multi-gene (provisional)")
+ma_combined_final <- fit_model(combined_final, "Combined multi-gene (diagnostic only)")
+} else cat("\nCombined multi-gene model skipped (run_combined_model is not true in the config).\n")
 
 # (v5: the single-gene vs multi-gene moderator test was removed. It compared
 #  absolute C0/D levels between different rows, which is not a valid comparison.)

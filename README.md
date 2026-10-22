@@ -1,7 +1,7 @@
 # tacrolimus-pgx-meta-analysis
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.1-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue)](CHANGELOG.md)
 [![Protocol: OSF](https://img.shields.io/badge/protocol-OSF%2010.17605%2FOSF.IO%2FXAPBR-1f6feb)](https://doi.org/10.17605/OSF.IO/XAPBR)
 [![Language: R](https://img.shields.io/badge/language-R-276DC3?logo=r)](https://www.r-project.org/)
 
@@ -95,6 +95,7 @@ workbook: data/my_extraction.xlsx
 sheet: Meta_Data_Extraction
 output_dir: results
 seed: 20260913
+run_combined_model: false
 manual_exclude: []
 ```
 
@@ -162,7 +163,7 @@ The systematic review and meta-analysis this code belongs to has a registered pr
 - DOI: [10.17605/OSF.IO/XAPBR](https://doi.org/10.17605/OSF.IO/XAPBR)
 - OSF project: [osf.io/jb8af](https://osf.io/jb8af)
 
-It is a **retrospective** registration. It was written after searching, screening, data extraction and the main analyses were complete, so it is not a preregistration. It sets out the methods as planned and as carried out, and lists the deviations between the two. Attached to the registration are the protocol document and the exact PubMed, Scopus and Embase search strings. This repository holds the analysis code referred to there.
+It is a **retrospective** registration. It was written after searching, screening, data extraction and the main analyses were complete, so it is not a preregistration. It sets out the methods as planned and as carried out, and lists the deviations between the two. Attached to the registration are the protocol document and the exact PubMed, Scopus and Embase search strings. This repository holds the analysis code referred to there. The deviations from the original plan, and where each shows up in the code, are on [docs/deviations.md](docs/deviations.md).
 
 ---
 
@@ -171,7 +172,7 @@ It is a **retrospective** registration. It was written after searching, screenin
 - Per-genotype sample sizes are not in the extraction layout, so weights ignore n and per-study CIs are not drawn.
 - ABCB1 models are not adjusted for CYP3A5 genotype.
 - Rows reported as median/IQR are pooled as if mean/SD (flagged in the log, no Wan/Luo conversion).
-- The combined multi-gene (CYP3A4 + CYP3A5 + ABCB1) model is fitted as a provisional check only. Joint-genotype cells are rarely reported with mean and SD, so it should not be cited as a pooled estimate.
+- Combined multi-gene evidence is handled narratively. Joint-genotype cells are rarely reported with mean and SD, so no pooled combined model is fitted by default (an optional diagnostic can be switched on in the config and should not be cited).
 - Small strata (fewer than about 6 studies) give unreliable robust CIs. Treat them as indicative.
 
 ---

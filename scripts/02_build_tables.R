@@ -15,11 +15,12 @@ fc_sens <- rd("sensitivity", "all_foldchanges.csv")
 if (is.null(fc_main)) stop("No main-run results in ", out_root, "/main. Run 01_meta_analysis.R first.")
 
 is_sub <- function(d) if (is.null(d)) NULL else d[grepl("\\|", d$model), ]
-not_sub <- function(d) if (is.null(d)) NULL else d[!grepl("\\|", d$model), ]
+not_sub <- function(d) if (is.null(d)) NULL else d[!grepl("\\||Combined", d$model), ]
 
 sheets <- list(
   Pooled_main        = not_sub(fc_main),
   Pooled_sensitivity = not_sub(fc_sens),
+  Combined_diagnostic = if (!is.null(fc_main)) fc_main[grepl("^Combined", fc_main$model), ] else NULL,
   CYP3A5_subgroups   = is_sub(fc_main)[grepl("^CYP3A5", is_sub(fc_main)$model) & !grepl("ancestry", is_sub(fc_main)$model), ],
   Ancestry_CYP3A5    = rd("main", "ethnicity_cyp3a5_stratified.csv"),
   Ancestry_study_lvl = rd("main", "ethnicity_study_level_summary.csv"),

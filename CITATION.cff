@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this pipeline, please cite it as below."
 title: "tacrolimus-pgx-meta-analysis: R pipeline for a CYP3A4/CYP3A5/ABCB1 tacrolimus pharmacogenetics meta-analysis"
 type: software
-version: 1.0.1
+version: 1.1.0
 date-released: 2026-10-22
 license: MIT
 authors:
