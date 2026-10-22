@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.1 (2026-10-22)
+- Added the OSF protocol registration (DOI 10.17605/OSF.IO/XAPBR) to the README (badge and a Protocol registration section) and to `CITATION.cff` as a related reference.
+
 ## 1.0.0 (2026-10-17)
 - First public version. Analysis script is the v6 + plots + ancestry version used for the MSc project (Umeå University, 5MO134), plus the F7 and F8 figures ported to R.
 - Added: config file, `run_all.R` entry point, package installer, Excel table builder, synthetic example workbook and generator.

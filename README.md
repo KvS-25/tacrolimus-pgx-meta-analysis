@@ -1,12 +1,13 @@
 # tacrolimus-pgx-meta-analysis
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.0.1-blue)](CHANGELOG.md)
+[![Protocol: OSF](https://img.shields.io/badge/protocol-OSF%2010.17605%2FOSF.IO%2FXAPBR-1f6feb)](https://doi.org/10.17605/OSF.IO/XAPBR)
 [![Language: R](https://img.shields.io/badge/language-R-276DC3?logo=r)](https://www.r-project.org/)
 
 An R pipeline for a meta-analysis of how CYP3A4, CYP3A5 and ABCB1 polymorphisms affect tacrolimus dose-adjusted trough concentration (C0/D) in solid organ transplant recipients. One command runs the models, the sensitivity analysis, the ancestry analysis, the figures and an Excel summary.
 
-Developed for an MSc advanced project at Umeå University (course 5MO134), supervised by Dr. Naushad Rais (MAHE Dubai). The six target SNPs are CYP3A5 rs776746 (*3), CYP3A4 rs35599367 (*22) and rs2242480 (*1G), and ABCB1 rs1045642 (3435C>T), rs2032582 (2677G>T/A) and rs1128503 (1236C>T).
+Developed for an MSc advanced project at Umeå University (course 5MO134), supervised by Dr. Naushad Rais (MAHE Dubai). The review protocol is registered on OSF: [10.17605/OSF.IO/XAPBR](https://doi.org/10.17605/OSF.IO/XAPBR). The six target SNPs are CYP3A5 rs776746 (*3), CYP3A4 rs35599367 (*22) and rs2242480 (*1G), and ABCB1 rs1045642 (3435C>T), rs2032582 (2677G>T/A) and rs1128503 (1236C>T).
 
 **Contact:** kvs.ms.2512@gmail.com | GitHub: [KvS-25](https://github.com/KvS-25)
 
@@ -22,6 +23,7 @@ Developed for an MSc advanced project at Umeå University (course 5MO134), super
 - [Running steps separately](#running-steps-separately)
 - [Output structure](#output-structure)
 - [Methods in brief](#methods-in-brief)
+- [Protocol registration](#protocol-registration)
 - [Known limitations](#known-limitations)
 - [Citation](#citation)
 - [License](#license)
@@ -153,6 +155,17 @@ results/
 
 ---
 
+## Protocol registration
+
+The systematic review and meta-analysis this code belongs to has a registered protocol on OSF Registries:
+
+- DOI: [10.17605/OSF.IO/XAPBR](https://doi.org/10.17605/OSF.IO/XAPBR)
+- OSF project: [osf.io/jb8af](https://osf.io/jb8af)
+
+It is a **retrospective** registration. It was written after searching, screening, data extraction and the main analyses were complete, so it is not a preregistration. It sets out the methods as planned and as carried out, and lists the deviations between the two. Attached to the registration are the protocol document and the exact PubMed, Scopus and Embase search strings. This repository holds the analysis code referred to there.
+
+---
+
 ## Known limitations
 
 - Per-genotype sample sizes are not in the extraction layout, so weights ignore n and per-study CIs are not drawn.
@@ -165,7 +178,7 @@ results/
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff).
+See [CITATION.cff](CITATION.cff) for the software. The protocol has its own DOI, [10.17605/OSF.IO/XAPBR](https://doi.org/10.17605/OSF.IO/XAPBR), and is listed as a related reference in the same file.
 
 <sub>P.S. GitHub's "Cite this repository" button uses this file.</sub>
 

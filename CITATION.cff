@@ -2,14 +2,25 @@ cff-version: 1.2.0
 message: "If you use this pipeline, please cite it as below."
 title: "tacrolimus-pgx-meta-analysis: R pipeline for a CYP3A4/CYP3A5/ABCB1 tacrolimus pharmacogenetics meta-analysis"
 type: software
-version: 1.0.0
-date-released: 2026-10-17
+version: 1.0.1
+date-released: 2026-10-22
 license: MIT
 authors:
   - family-names: Singh
     given-names: Karanveer
     email: kvs.ms.2512@gmail.com
 repository-code: "https://github.com/KvS-25/tacrolimus-pgx-meta-analysis"
+references:
+  - type: generic
+    title: "Combined pharmacogenetic influence of CYP3A4, CYP3A5 and ABCB1 polymorphisms on tacrolimus pharmacokinetics in solid organ transplant recipients: a systematic review and meta-analysis (retrospective protocol)"
+    authors:
+      - family-names: Singh
+        given-names: Karanveer
+    doi: "10.17605/OSF.IO/XAPBR"
+    url: "https://doi.org/10.17605/OSF.IO/XAPBR"
+    database: "OSF Registries"
+    year: 2026
+    month: 10
 keywords:
   - pharmacogenetics
   - meta-analysis
