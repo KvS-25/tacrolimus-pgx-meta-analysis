@@ -3,12 +3,16 @@ message: "If you use this pipeline, please cite it as below."
 title: "tacrolimus-pgx-meta-analysis: R pipeline for a CYP3A4/CYP3A5/ABCB1 tacrolimus pharmacogenetics meta-analysis"
 type: software
 version: 1.1.0
-date-released: 2026-10-22
+date-released: 2026-10-28
 license: MIT
 authors:
   - family-names: Singh
     given-names: Karanveer
     email: kvs.ms.2512@gmail.com
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23726874
+    description: Concept DOI — always resolves to the latest archived version
 repository-code: "https://github.com/KvS-25/tacrolimus-pgx-meta-analysis"
 references:
   - type: generic
@@ -25,6 +29,7 @@ keywords:
   - pharmacogenetics
   - meta-analysis
   - tacrolimus
+  - CYP3A4
   - CYP3A5
   - ABCB1
   - R
