@@ -180,7 +180,7 @@ It is a **retrospective** registration. It was written after searching, screenin
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff) for the software. The protocol has its own DOI, [10.17605/OSF.IO/XAPBR](https://doi.org/10.17605/OSF.IO/XAPBR), and is listed as a related reference in the same file.
+See [CITATION.cff](CITATION.cff) for the software. The protocol has its own DOI, [10.17605/OSF.IO/XAPBR](https://doi.org/10.17605/OSF.IO/XAPBR), and is listed as a related reference in the same file. Archived releases are deposited on Zenodo: [10.5281/zenodo.23726874](https://doi.org/10.5281/zenodo.23726874).
 
 <sub>P.S. GitHub's "Cite this repository" button uses this file.</sub>
 
