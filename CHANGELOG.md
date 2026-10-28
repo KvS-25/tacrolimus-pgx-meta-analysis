@@ -1,7 +1,7 @@
 # Changelog
 
 ## Unreleased
-- Added the Zenodo software DOI (10.5281/zenodo.23726874) to the README and `CITATION.cff`.
+- Added the Zenodo software DOI (10.5281/zenodo.23726874, version DOI for v1.1.0; concept DOI 10.5281/zenodo.23726873) to the README and `CITATION.cff`.
 - Corrected the description in `zenodo.json`: the analyses were not prespecified, in line with the retrospective protocol.
 
 ## 1.1.0 (2026-10-28)

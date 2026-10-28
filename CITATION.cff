@@ -12,7 +12,10 @@ authors:
 identifiers:
   - type: doi
     value: 10.5281/zenodo.23726874
-    description: Concept DOI — always resolves to the latest archived version
+    description: Version DOI for release v1.1.0
+  - type: doi
+    value: 10.5281/zenodo.23726873
+    description: Concept DOI for all versions, always resolves to the latest archived version
 repository-code: "https://github.com/KvS-25/tacrolimus-pgx-meta-analysis"
 references:
   - type: generic
