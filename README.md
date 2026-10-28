@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.1.0-blue)](CHANGELOG.md)
 [![Protocol: OSF](https://img.shields.io/badge/protocol-OSF%2010.17605%2FOSF.IO%2FXAPBR-1f6feb)](https://doi.org/10.17605/OSF.IO/XAPBR)
+[![Software DOI](https://img.shields.io/badge/software-10.5281%2Fzenodo.23726874-1f6feb)](https://doi.org/10.5281/zenodo.23726874)
 [![Language: R](https://img.shields.io/badge/language-R-276DC3?logo=r)](https://www.r-project.org/)
 
 An R pipeline for a meta-analysis of how CYP3A4, CYP3A5 and ABCB1 polymorphisms affect tacrolimus dose-adjusted trough concentration (C0/D) in solid organ transplant recipients. One command runs the models, the sensitivity analysis, the ancestry analysis, the figures and an Excel summary.
