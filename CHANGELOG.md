@@ -1,6 +1,11 @@
 # Changelog
 
-## 1.1.0 (2026-10-22)
+## Unreleased
+- Added the Zenodo software DOI (10.5281/zenodo.23726874) to the README and `CITATION.cff`.
+- Corrected the description in `zenodo.json`: the analyses were not prespecified, in line with the retrospective protocol.
+
+## 1.1.0 (2026-10-28)
+- Archived on Zenodo (release v1.1.0).
 - Changed: the combined multi-gene model no longer runs by default, matching the registered protocol (multi-gene evidence is narrative only). It can be switched on with `run_combined_model: true` in the config as a diagnostic; its output is kept out of the pooled tables and figures.
 - Added: `docs/deviations.md`, the list of deviations from the original plan and where each appears in the code.
 
